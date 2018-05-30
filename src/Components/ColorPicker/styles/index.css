@@ -1,0 +1,173 @@
+.ColorPicker {
+    width: 400px;
+    height: 250px;
+    background-color: #dcdcdc;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.ColorPicker>div {
+    display: inline-block;
+    border: 1px solid #cacaca;
+    background-color: #fff;
+}
+.color-hex {
+    color: black;
+    width: 260px;
+    height: 50px;
+    text-align: left;
+    color: #7d7d7d;
+}
+.color-hex p {
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+    top: 37px;
+    position: absolute;
+}
+.dropbtn {
+    color: white;
+    font-size: 16px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.dropdown span {
+    width: 20px;
+    height: 20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 55px;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.HEX.dropdown> span:first-child {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    left: 15px;
+}
+.HEX.dropdown #myDropdown {
+    right: -50px;
+}
+.RGB.dropdown #myDropdown {
+    right: 0;
+}
+.HEX.dropbtn, .RGB.dropbtn {
+    z-index: 111;
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+}
+#myDropdown p {
+    text-align: left;
+    padding: 0 10px;
+    text-transform: uppercase;
+    color: #7d7d7d;
+    margin: 12px 0;
+}
+#myDropdown p span {
+    float: right;
+}
+.RGB.dropbtn::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #7d7d7d;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+.color-preview {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.dropdown-elem:hover {
+    background-color: #e2e2e2;
+    cursor: pointer;
+}
+.slidecontainer {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    direction: rtl;
+    margin: 15px 0;
+}
+.slider#red {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0000+0,000000+100 */
+    background: #ff0000; /* Old browsers */
+    background: -moz-linear-gradient(left, #ff0000 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ff0000 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ff0000 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+.slider#green {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00ff00+0,000000+100 */
+    background: #00ff00; /* Old browsers */
+    background: -moz-linear-gradient(left, #00ff00 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #00ff00 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #00ff00 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff00', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+.slider#blue {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0000ff+0,000000+100 */
+    background: #0000ff; /* Old browsers */
+    background: -moz-linear-gradient(left, #0000ff 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0000ff 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0000ff 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #7d7d7d;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #7d7d7d;
+    cursor: pointer;
+}
